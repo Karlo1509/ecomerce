@@ -1,0 +1,31 @@
+@import "./index.css";
+
+
+@media screen and (max-width: 500px) {
+
+  .producto:nth-child(+n) {
+    row-gap: 0;
+    display: flex !important;
+    width: 47% !important;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 1rem;
+    font-weight: bold;
+  }
+  .producto:nth-child(+n) img {
+    width: 100% !important
+  }
+
+  .producto__options {
+    top: 0.7rem;
+    bottom: 0rem;
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+
+}

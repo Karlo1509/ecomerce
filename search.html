@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
+    <link rel="stylesheet" href="./assets/css/principal.css">
+    <!-- <link rel="stylesheet" href="./assets/css/login.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/new_product.css"> -->
+    <link rel="stylesheet" href="./assets/css/all_products.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <link rel="stylesheet" href="./assets/css/responsivo.css">
+    <link rel="stylesheet" href="./assets/css/footer-responsivo.css">
+    <link rel="stylesheet" href="./assets/css/search-responsivo.css">
+
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- Scripts -->
+    <script type="module" src="./assets/js/search.js"></script>
+
+
+    <title>Proyecto Ecommerce</title>
+  </head>
+  <body id="contenedor">
+
+
+    <nav id="navbar">
+      <ul>
+        <li id="">
+          <a href="index.html">
+            <img src="./assets/img/Logo.png" alt="logo">
+          </a>
+        </li>
+        <li id="navbar__search">
+          <form id="navbar__search-form" class="" data-search>
+            <fieldset>
+              <input type="text" name="" value="" placeholder="Buscar..." data-search-input>
+              <button id="navbar__search-submit" type="submit" name="button" title="Buscar"></button>
+            </fieldset>
+          </form>
+        </li>
+        <li>
+          <a id="loginBtn" href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <main id="maincontent" data-main>
+
+      <div id="title" class="">
+        <span id="title__data" data-title-search>Resultado de búsqueda:</span>
+        <span id="title__strong" data-title-strong></span>
+      </div>
+      <div id="all__body" class="" data-main-search>
+      </div>
+
+
+    </main>
+
+
+    <footer id="footer">
+      <div id="footer__datos" class="">
+
+        <div id="footer__datos-info" class="">
+
+          <img src="./assets/img/Logo.png" alt="logo">
+
+          <ul>
+            <li>Quiénes somos</li>
+            <li>Políticas de privacidad</li>
+            <li>Programa de fidelidad</li>
+            <li>Nuestras Tiendas</li>
+            <li>Quiero ser franquiciado</li>
+            <li>
+              <a href="new_product.html">Anuncie aquí</a>
+            </li>
+          </ul>
+
+          <div id="footer__datos-contacto" class="">
+            <div id="footer__datos-informacion" class="">
+              <h1>Hable con nosotros</h1>
+              <span data-showalert-send></span>
+            </div>
+            <form id="form_contacto" class="" data-form-contacto>
+              <span class="form_contacto-alert" data-warning-name></span>
+              <fieldset id="form_contacto-fs1" class="campos">
+                <input type="text" name="" value="" minlength="1" maxlength="40" data-form-contacto-name>
+                <span>Nombre</span>
+              </fieldset>
+              <span class="form_contacto-alert" data-warning-mensaje></span>
+              <fieldset id="form_contacto-fs2" class="campos">
+                <input type="text" name="" value="" minlength="1" maxlength="120" data-form-contacto-mensaje>
+                <span>Escribe tu mensaje</span>
+              </fieldset>
+              <button type="submit" name="button">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div id="footer__creditos" class="">
+        <span>
+          Desarrollado por Karlo Castillo
+        </span>
+        <span>2022</span>
+      </div>
+
+
+    </footer>
+
+
+  </body>
+</html>

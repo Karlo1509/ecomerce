@@ -1,0 +1,232 @@
+@import "./index.css";
+
+input, select, option {
+  font-family: var(--font-family) !important;
+}
+
+#navbar {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+#navbar ul {
+  justify-content: space-between;
+}
+
+
+#maincontent {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 7rem;
+}
+
+
+#newproduct {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+}
+
+#mensaje_create {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-precio);
+  column-gap: 1rem;
+  height: 4rem;
+}
+#mensaje_create-div {
+  display: none;
+  flex-direction: row;
+}
+#mensaje_create-span {
+  display: flex;
+  flex-direction: row;
+  width: 28rem;
+  justify-content: space-evenly;
+}
+#mensaje_create span {
+  border-bottom: 1px solid var(--color-precio);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#mensaje_create #closeX {
+  width: 1rem;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+  border: none;
+}
+#mensaje_create #closeX:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#newproduct__title {
+
+  padding-left: 2rem;
+  width: 30rem;
+}
+#newproduct__title h1 {
+  color: var(--color-precio);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+#newproduct__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-top: 1rem;
+  width: 30rem;
+}
+
+#newproduct__form .fieldsetForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+
+#fieldsetForm__iconTrash:hover, #fieldsetForm__iconTrash:active {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#fieldsetForm__uploadDiv {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+}
+#fieldsetForm__uploadDiv input {
+  margin-left: 0;
+  margin-right: 0;
+  height: 2rem;
+  width: 100%;
+}
+#fieldsetForm__uploadDiv span {
+  border-bottom: 1px solid gray;
+  height: 2rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fieldsetForm span {
+  font-size: 18px;
+  color: gray;
+  padding-left: 1rem;
+}
+.fieldsetForm__title {
+  margin-bottom: 0.4rem;
+}
+.fieldsetForm input {
+  border: none;
+  height: 2rem;
+  padding-left: 1rem;
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid gray;
+}
+.fieldsetForm input:focus-visible {
+  outline: none;
+  /* outline-style: dashed;
+  outline-color: var(--color-boton);
+  outline-width: 3px; */
+}
+
+#categoria {
+  display: grid;
+  grid-template-areas: "existente nueva";
+  grid-template-columns: 10rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: flex-start;
+  column-gap: 1rem;
+}
+#categoria__existente {
+  grid-area: existente;
+}
+#categoria__existente select {
+  width: 100%;
+  position: relative;
+  top: 0.33rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 3px 10px 3px 10px;
+  font-size: 16px;
+}
+#categoria__existente span {
+  padding: 0;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+#categoria__nueva {
+  grid-area: nueva;
+}
+#categoria__nueva input {
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+
+#priceField {
+  display: grid;
+  grid-template-areas:
+    "signo valor";
+  align-items: center;
+  grid-template-columns: 2.5rem auto;
+  border-bottom: 1px solid gray;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+#priceField__span {
+  grid-area: signo;
+  font-weight: normal;
+  font-size: 24px;
+}
+#priceField__price {
+  grid-area: valor;
+  margin-left: 0;
+  padding-left: 0;
+  border: none;
+}
+
+
+#newproduct__form button {
+  color: white;
+  text-decoration: none;
+  background-color: var(--color-boton);
+  height: 3rem;
+  border-radius: 4px;
+  border: none;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0px 1px 5px navy;
+}
+
+#newproduct__form button:hover {
+  cursor: pointer;
+}
